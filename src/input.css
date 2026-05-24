@@ -11,3 +11,7 @@
 .active {
     @apply translate-x-0;
 }
+
+.search-active {
+    @apply scale-y-100
+}
