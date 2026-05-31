@@ -15,3 +15,7 @@
 .search-active {
     @apply scale-y-100
 }
+
+.star {
+    @apply fill-current
+}

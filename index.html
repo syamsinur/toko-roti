@@ -29,6 +29,9 @@
             <a class="block relative text-lg font-semibold text-black m-4 pb-2 hover:text-primary after:origin-bottom-left after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 md:text-base md:text-white md:font-normal md:after:origin-center" href="#menu">
                 Menu
             </a>
+            <a class="block relative text-lg font-semibold text-black m-4 pb-2 hover:text-primary after:origin-bottom-left after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 md:text-base md:text-white md:font-normal md:after:origin-center" href="#product">
+                Produk
+            </a>
             <a class="block relative text-lg font-semibold text-black m-4 pb-2 hover:text-primary after:origin-bottom-left after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:border-b-2 after:border-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 md:text-base md:text-white md:font-normal md:after:origin-center" href="#contact">
                 Kontak
             </a>
@@ -37,7 +40,7 @@
         <!-- extra nav -->
         <div class="flex">
             <a id="search-btn" href="#" class="mx-2 hover:text-primary"><i data-feather="search"></i></a>
-            <a id="cart" href="#" class="mx-2 hover:text-primary"><i data-feather="shopping-bag"></i></a>
+            <a id="shopping-btn" href="#" class="mx-2 hover:text-primary"><i data-feather="shopping-bag"></i></a>
             <a id="hamburger" href="#" class="mx-2 hover:text-primary md:hidden"><i data-feather="menu"></i></a>
         </div>
 
@@ -46,6 +49,19 @@
             <input type="search" id="search-box" class="w-full h-full p-2 text-sm outline-0 md:text-base" autocomplete="off" placeholder="type here ...">
             <label for="search-box" class="cursor-pointer mx-4"><i data-feather="search"></i></label>
          </div>
+
+         <!-- shopping cart -->
+          <div id="shopping-cart" class="absolute top-full right-0 translate-x-full bg-white w-72 h-screen items-center px-4 md:w-[45%] md:justify-center transition duration-300">
+            <!-- item cart -->
+            <div class="relative text-slate-900 flex items-center my-8 gap-6 pb-4 border-b border-dashed ">
+                <img src="./src/img/produk/dounat.jpg" alt="dounat" class="h-24 rounded-full">
+                <div>
+                    <h3 class="text-base font-semibold md:text-lg">Dounat</h3>
+                    <div class="text-sm md:text-base">IDR 22K</div>
+                </div>
+                <i data-feather="trash-2" class="absolute right-0 hover:text-primary"></i>
+            </div>
+          </div>
     </nav>
 
     <!-- hero section -->
@@ -94,6 +110,81 @@
             </div>
         </div>
     </section>
+
+    <!-- product section -->
+     <section id="product" class="pt-28 px-[7%] pb-5">
+        <h2 class="text-3xl font-bold text-center mb-4"><span class="text-primary">Product</span> Kami</h2>
+        <p class="text-base text-center">Produk produk unggulan kami <i data-feather="check" class="inline"></i></p>
+        <!-- card -->
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-6 mt-16">
+            <div class="text-center border border-slate-500 p-8">
+                <div class="flex justify-center gap-2">
+                    <a href="#" class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="shopping-bag"></i></a>
+                    <a href="#"  class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="eye"></i></a>
+                </div>
+                <div class="py-4">
+                    <img src="./src/img/produk/dounat.jpg" alt="dounat" class="inline-block h-96">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold tracking-wide">Donat Salju</h3>
+                    <div class="flex justify-center p-4">
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary"></i>
+                    </div>
+                </div>
+                <div class="text-lg font-bold">
+                    IDR 22K <span class="font-normal text-sm line-through">IDR 30K</span>
+                </div>
+            </div>
+            <div class="text-center border border-slate-500 p-8">
+                <div class="flex justify-center gap-2">
+                    <a href="#" class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="shopping-bag"></i></a>
+                    <a href="#"  class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="eye"></i></a>
+                </div>
+                <div class="py-4">
+                    <img src="./src/img/produk/brownies.jpg" alt="brownies" class="inline-block h-96">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold tracking-wide">Brownies</h3>
+                    <div class="flex justify-center p-4">
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary"></i>
+                    </div>
+                </div>
+                <div class="text-lg font-bold">
+                    IDR 25K <span class="font-normal text-sm line-through">IDR 32K</span>
+                </div>
+            </div>
+            <div class="text-center border border-slate-500 p-8">
+                <div class="flex justify-center gap-2">
+                    <a href="#" class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="shopping-bag"></i></a>
+                    <a href="#"  class="flex justify-center items-center w-16 h-16 m-1 border border-slate-500 rounded-full hover:bg-primary hover:border-primary"><i data-feather="eye"></i></a>
+                </div>
+                <div class="py-4">
+                    <img src="./src/img/produk/cheesecake.jpg" alt="cheesecake" class="inline-block h-96">
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold tracking-wide">Cheese Cake</h3>
+                    <div class="flex justify-center p-4">
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary star"></i>
+                        <i data-feather="star" class="text-primary"></i>
+                    </div>
+                </div>
+                <div class="text-lg font-bold">
+                    IDR 20K <span class="font-normal text-sm line-through">IDR 25K</span>
+                </div>
+            </div>
+        </div>
+     </section>
 
     <!-- contact section -->
      <section id="contact" class="pt-28 px-[7%] pb-5">
